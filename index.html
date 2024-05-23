@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood and Energy Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <div id="input-container">
+            <label>Mood:</label>
+            <div id="mood-container">
+                <div>
+                    <input type="radio" id="mood-awful" name="mood" value="awful">
+                    <label for="mood-awful">😩</label>
+                </div>
+                <div>
+                    <input type="radio" id="mood-bad" name="mood" value="bad">
+                    <label for="mood-bad">😞</label>
+                </div>
+                <div>
+                    <input type="radio" id="mood-meh" name="mood" value="meh">
+                    <label for="mood-meh">😐</label>
+                </div>
+                <div>
+                    <input type="radio" id="mood-good" name="mood" value="good" checked>
+                    <label for="mood-good">😊</label>
+                </div>
+                <div>
+                    <input type="radio" id="mood-great" name="mood" value="great">
+                    <label for="mood-great">😃</label>
+                </div>
+            </div>
+            <label for="energy">Energy:</label>
+            <input type="range" id="energy" min="0" max="100" value="50">
+            <button id="record-btn">Record</button>
+        </div>
+        <div id="list-view">
+            <h2>List View</h2>
+            <ul id="entry-list"></ul>
+        </div>
+        <div id="calendar-view">
+            <h2>Calendar View</h2>
+            <div id="calendar"></div>
+        </div>
+        <button id="toggle-view-btn">Toggle View</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
